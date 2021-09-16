@@ -21,7 +21,12 @@ const App = () => {
   };
 
   const handleShowDeck = () => {
-    setShowDeck(true);
+    if (showDeck) {
+      setShowDeck(false);
+    }
+    if (!showDeck) {
+      setShowDeck(true);
+    }
   };
 
   useEffect(() => {

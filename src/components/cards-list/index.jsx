@@ -8,7 +8,6 @@ const CardsList = ({ cardsList }) => {
   const handleSuitFilter = (e) => {
     if (e.target.id === suitFilter) {
       setSuitFilter(true);
-      e.target.id = false;
     } else {
       setSuitFilter(e.target.id);
     }
@@ -21,7 +20,7 @@ const CardsList = ({ cardsList }) => {
         <div>
           <input
             onClick={handleSuitFilter}
-            type="radio"
+            type="checkbox"
             id="SPADES"
             name="suit"
           />
@@ -29,7 +28,7 @@ const CardsList = ({ cardsList }) => {
 
           <input
             onClick={handleSuitFilter}
-            type="radio"
+            type="checkbox"
             id="HEARTS"
             name="suit"
           />
@@ -37,7 +36,7 @@ const CardsList = ({ cardsList }) => {
 
           <input
             onClick={handleSuitFilter}
-            type="radio"
+            type="checkbox"
             id="CLUBS"
             name="suit"
           />
@@ -45,7 +44,7 @@ const CardsList = ({ cardsList }) => {
 
           <input
             onClick={handleSuitFilter}
-            type="radio"
+            type="checkbox"
             id="DIAMONDS"
             name="suit"
           />
